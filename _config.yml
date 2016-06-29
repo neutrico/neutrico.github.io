@@ -28,3 +28,6 @@ exclude:
   README.md,
   package.json
   ]
+sass:
+  sass_dir: assets/styles
+  style: compressed
