@@ -17,3 +17,11 @@ github_username:  neutrico
 
 # Build settings
 markdown: kramdown
+exclude:
+  [
+  node_modules/,
+  CNAME,
+  LICENSE,
+  README.md,
+  package.json
+  ]
