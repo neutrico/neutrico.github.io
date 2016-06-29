@@ -22,7 +22,6 @@ exclude:
   .git/,
   _sass/,
   .sass-cache/,
-  assets/,
   node_modules/,
   CNAME,
   LICENSE,
