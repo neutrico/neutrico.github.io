@@ -1,8 +1,19 @@
 <!doctype html>
 <html>
+  <head>
+    {% include head.html %}
+    
+    {% if jekyll.environment == "development" %}
+    <link rel="stylesheet" href="{{ "/main.css" | prepend: site.baseurl }}">
+    {% endif %}
 
-  {% include head.html %}
+    {% if jekyll.environment == "production" %}
+    <style>
+     {% include main.css %}
+    </style>
+    {% endif %}
 
+  </head>
   <body>
     {% include header.html %}
 
