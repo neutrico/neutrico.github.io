@@ -19,12 +19,16 @@ github_username:  neutrico
 markdown: kramdown
 exclude:
   [
+  .*,
   .git/,
   _sass/,
   .sass-cache/,
+  bs-config.js,
   node_modules/,
   CNAME,
   LICENSE,
   README.md,
-  package.json
+  package.json,
+  postcss.json,
+  init.sh
   ]
