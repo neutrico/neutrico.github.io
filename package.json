@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "prepublish": "node-sass _styles/main.scss | postcss -c postcss.json && uglifyjs _scripts/main.js -o assets/scripts/main.js"
+    "prepublish": "node-sass _styles/main.scss | postcss -c postcss.json && uglifyjs _scripts/main.js -o assets/scripts/main.js; imagemin _images/**/* assets/images"
   },
   "devDependencies": {
     "async": "^2.0.0-rc.6",
@@ -11,10 +11,11 @@
     "cli-color": "^1.1.0",
     "cssnano": "^3.7.1",
     "fs-extra": "^0.30.0",
+    "imagemin": "^5.2.2",
     "node-sass": "^3.8.0",
     "postcss": "^5.0.21",
     "postcss-cli": "^2.5.2",
     "postcss-uncss": "0.0.1"
   },
-  "version": "0.36.0"
+  "version": "0.37.0"
 }
