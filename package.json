@@ -16,5 +16,5 @@
     "postcss-cli": "^2.5.2",
     "postcss-uncss": "0.0.1"
   },
-  "version": "0.32.0"
+  "version": "0.33.0"
 }
