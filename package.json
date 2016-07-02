@@ -8,6 +8,7 @@
     "babel-cli": "^6.10.1",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-stage-2": "^6.11.0",
+    "bootstrap-sass": "^3.3.6",
     "browser-sync": "^2.13.0",
     "cli-color": "^1.1.0",
     "cssnano": "^3.7.1",
@@ -18,5 +19,5 @@
     "postcss-cli": "^2.5.2",
     "postcss-uncss": "0.0.1"
   },
-  "version": "0.39.0"
+  "version": "0.40.0"
 }
