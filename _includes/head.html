@@ -1,17 +1,10 @@
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-
-<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-{% if jekyll.environment == "production" %}
-<script>
+<link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl | prepend: site.url}}">
+    <link rel="manifest" href="manifest.json">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="author" type="text/plain" href="{{ '/humans.txt' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+{% if jekyll.environment == "production" %}<script>
  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
  ga('create', 'UA-45039813-9', 'auto');
  ga('send', 'pageview');
-</script>
-<script async src="assets/scripts/analytics.js"></script>
-{% endif %}
+</script><script async src="assets/scripts/analytics.js"></script>{% endif %}

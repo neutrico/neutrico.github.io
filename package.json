@@ -1,7 +1,7 @@
 {
   "scripts": {
     "prepublish": "node-sass _styles/main.scss | postcss -c postcss.json && uglifyjs _scripts/main.js -o assets/scripts/main.js; imagemin _images/**/* assets/images",
-    "start": "jekyll build && cp _scripts/*.js _site/assets/scripts/ && browser-sync start --config bs-config.js"
+    "start": "jekyll build && cp _scripts/*.js _site/assets/scripts/ && node-sass _styles/main.scss _site/main.css && browser-sync start --config bs-config.js"
   },
   "devDependencies": {
     "async": "^2.0.0-rc.6",

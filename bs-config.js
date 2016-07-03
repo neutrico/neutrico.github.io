@@ -1,8 +1,3 @@
-cp = require('child_process');
-fs = require('fs-extra');
-path = require('path');
-sass = require('node-sass');
-
 /*
   |--------------------------------------------------------------------------
   | Browser-sync config file
@@ -16,6 +11,11 @@ sass = require('node-sass');
   |
   |
 */
+cp = require('child_process');
+fs = require('fs-extra');
+path = require('path');
+sass = require('node-sass');
+
 module.exports = {
     "ui": false,
     "files": [
@@ -44,7 +44,7 @@ module.exports = {
 		fs.createReadStream(file).pipe(fs.createWriteStream('./_site/assets/scripts/'+path.basename(file)));
 	    }
 	}, {
-	    "match": ['./_includes/*', './_layouts/*'],
+	    "match": ['./_includes/*', './_layouts/*', './*.html', './*.md'],
 	    "fn": function(event, file){
 		if(event === 'change') {
 		    cp.spawn('jekyll', ['build', '--incremental', '--quiet'], {stdio: 'inherit'}).on('close', function(code){
