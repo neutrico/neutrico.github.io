@@ -13,7 +13,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://neutrico.eu" # the base hostname & protocol for your site
 twitter_username: neutrico
 github_username:  neutrico
-
+tagline: creative web studio
 # Build settings
 markdown: kramdown
 exclude:
