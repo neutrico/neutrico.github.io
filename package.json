@@ -1,6 +1,6 @@
 {
-    "scripts": {
-	"postcheckout": "echo 'postcheckout' && npm start",
+  "scripts": {
+    "postcheckout": "echo 'postcheckout' && npm start",
     "prepublish": "node-sass _styles/main.scss | postcss -c postcss.json && uglifyjs _scripts/main.js -o assets/scripts/main.js; imagemin _images/**/* assets/images",
     "start": "jekyll build && cp _scripts/*.js _site/assets/scripts/ && node-sass _styles/main.scss _site/main.css && browser-sync start --config bs-config.js"
   },
@@ -21,5 +21,5 @@
     "postcss-cli": "^2.5.2",
     "postcss-uncss": "0.0.1"
   },
-  "version": "0.42.0"
+  "version": "0.43.0"
 }
