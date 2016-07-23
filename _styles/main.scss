@@ -23,4 +23,10 @@ body {
     > main {
 	@extend .hidden;
     }
+
+    > footer {
+	@extend .container-fluid;
+	position: fixed;
+	bottom: 0;
+    }
 }
