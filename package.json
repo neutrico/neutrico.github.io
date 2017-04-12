@@ -1,11 +1,13 @@
 {
   "name": "neutrico.github.io",
+  "private": true,
   "version": "0.1.0",
   "description": "Neutrico home page",
-  "main": "bs-config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
@@ -42,15 +44,18 @@
     "postcss": "^5.2.16",
     "postcss-cli": "^3.0.0-beta",
     "postcss-uncss": "^0.14.0",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
     "react-intl": "^2.2.3",
     "react-redux": "^5.0.3",
     "react-router": "^3.0.2",
+    "react-scripts": "^0.9.5",
     "redux": "^3.6.0",
     "redux-devtools": "^3.3.2",
     "sass-loader": "^6.0.3",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
   }
 }

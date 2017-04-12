@@ -1,0 +1,24 @@
+{
+    "ecmaVersion": 7,
+    "libs": [
+        "browser"
+    ],
+    "loadEagerly": [
+        "src/*.js",
+        "src/*.jsx",
+        "node_modules/react/**/*.js"
+    ],
+    "dontLoad": [
+        "node_modules/**"
+    ],
+    "plugins": {
+        "modules": {},
+        "es_modules": {},
+        "node": {},
+        "jsx": {},
+        "doc_comment": {
+            "fullDocs": true,
+            "strong": true
+        }
+    }
+}
